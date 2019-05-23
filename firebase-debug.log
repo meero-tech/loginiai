@@ -1,0 +1,45 @@
+[debug] [2019-05-23T09:22:17.551Z] ----------------------------------------------------------------------
+[debug] [2019-05-23T09:22:17.558Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-05-23T09:22:17.559Z] CLI Version:   6.10.0
+[debug] [2019-05-23T09:22:17.560Z] Platform:      win32
+[debug] [2019-05-23T09:22:17.560Z] Node Version:  v6.11.3
+[debug] [2019-05-23T09:22:17.561Z] Time:          Thu May 23 2019 16:22:17 GMT+0700 (SE Asia Standard Time)
+[debug] [2019-05-23T09:22:17.562Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-23T09:22:17.600Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-23T09:22:17.602Z] > authorizing via signed-in user
+[debug] [2019-05-23T09:22:17.603Z] [iam] checking project happybirthday-74a33 for permissions ["firebase.projects.get"]
+[debug] [2019-05-23T09:22:17.610Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/happybirthday-74a33:testIamPermissions  
+
+[debug] [2019-05-23T09:22:31.277Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-23T09:22:31.283Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/happybirthday-74a33  
+ 
+[debug] [2019-05-23T09:22:32.654Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\RENTALMOBIL'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "6"
+[debug] [2019-05-23T09:22:33.002Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/568000976747/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-23T09:22:33.004Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/568000976747:getServerAppConfig  
+ 
+[debug] [2019-05-23T09:22:33.651Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5001
+[debug] [2019-05-23T09:22:33.698Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "E:\RENTALMOBIL\functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: RENTALMOBIL
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-05-23T09:22:36.021Z] Functions runtime initialized.
+[debug] [2019-05-23T09:22:36.022Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] !  AssertionError: missing path
+    at Module.require (module.js:495:3)
+    at require (internal/module.js:20:19)
+    at InitializeFirebaseAdminStubs (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:231:18)
+    at C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:451:9
+    at next (native)
+    at C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:7:71
+    at __awaiter (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:3:12)
+    at main (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:421:12)
+    at Object.<anonymous> (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:511:5)
+    at Module._compile (module.js:570:32)
+[warn] !  Your function was killed because it raised an unhandled error.
